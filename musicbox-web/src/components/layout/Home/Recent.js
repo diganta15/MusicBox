@@ -7,13 +7,13 @@ const Recent = () => {
     const playlistContext = useContext(PlaylistContext);
     const songsContext = useContext(SongsContext);
 
-    const { myAlbums } = playlistContext;
+    const { myAlbums, newReleases } = playlistContext;
 
 
     return (
         <div className="recent">
             <div className="recently-played">
-            <Playlists albums={myAlbums.albums.items} />
+            <Playlists albums={newReleases} />
             </div>
         </div>
     )

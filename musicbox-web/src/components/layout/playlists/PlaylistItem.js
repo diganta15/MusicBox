@@ -3,8 +3,10 @@ import React from 'react'
 const PlaylistItem = ({album}) => {
     return (
         <div >
-            <img className="track-img" src={album.images[1].url} alt="" />
-           <h1 className="track-name">{album.name}</h1> 
+            <img className="playlist-img" src={album.images[0].url} alt="" />
+           <div className="name-wrapper">
+                <h1 className="playlist-name">{album.name}</h1>
+           </div>
         </div>
     )
 }
