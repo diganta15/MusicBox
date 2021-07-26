@@ -111,7 +111,7 @@
 }
 
 
-/*Recent*/
+/*Home*/
 
 .home{
 	background-color: #161A1A;
@@ -134,4 +134,11 @@
 
 .featured{
 	margin-top: 8rem;
+}
+.playlist-title{
+	color: #fff;
+	font-family: 'Lato',serif;
+	font-style: bold;
+	font-size: 1.5rem;
+	margin-bottom: 1rem;
 }

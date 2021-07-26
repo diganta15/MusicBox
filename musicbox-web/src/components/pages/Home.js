@@ -1,5 +1,5 @@
 import React,{Fragment, useContext} from 'react';
-import Featured from '../../context/playlists/Featured';
+import Featured from '../layout/Home/Featured';
 import NavBar from '../layout/NavBar';
 import NewReleases from '../layout/Home/NewReleases';
 import PlaylistContext from '../../context/playlists/playlistContext';
