@@ -3,7 +3,7 @@ import React from 'react'
 const PlaylistItem = ({album}) => {
     return (
         <div className="pointer" >
-            <img className="playlist-img" src={album.images[0].url} alt="" />
+            <img className="playlist-img br-1" src={album.images[0].url} alt="" />
            <div className="name-wrapper">
                 <h1 className="playlist-name">{album.name}</h1>
            </div>

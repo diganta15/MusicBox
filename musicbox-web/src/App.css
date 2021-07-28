@@ -6,16 +6,21 @@
 .flex {
 	display: flex;
 	flex-direction: row;
-	
 }
-.grid-5{
+.grid-5 {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
-.sp{
+.mg-1{
+	margin-top: 1rem;
+}
+.br-1{
+	border-radius: 6px;
+}
+.sp {
 	justify-content: space-between;
 }
-.pointer{
+.pointer {
 	cursor: pointer;
 }
 /**/
@@ -40,7 +45,7 @@
 	padding-top: 10px;
 	padding-bottom: 10px;
 	padding-left: 28rem;
-	font-family: "Lato", serif;	
+	font-family: "Lato", serif;
 	position: relative;
 }
 
@@ -70,102 +75,119 @@
 	border-radius: 16px; /*1*/
 	border: 2px solid transparent; /*2*/
 	background: linear-gradient(to right, #9b2def, #35edfb) border-box; /*3*/
-	-webkit-mask:
-     linear-gradient(#fff #fff #fff) padding-box, 
-     linear-gradient(#fff #fff #fff);
+	-webkit-mask: linear-gradient(#fff #fff #fff) padding-box,
+		linear-gradient(#fff #fff #fff);
 	-webkit-mask-composite: destination-out; /*5'*/
 	mask-composite: exclude; /*5*/
-
 }
-#search{
-	font-family: 'FontAwesome','Lato';
+#search {
+	font-family: "FontAwesome", "Lato";
 	height: 26px;
 	outline: transparent;
 	border: 1px grey solid;
 	border-radius: 20px;
-	background-color: #161A1A;
+	background-color: #161a1a;
 	color: #fff;
 	padding: 0px 10px;
 }
-#search::before{
-	font-family: 'FontAwesome';
-	content: 'f002';
-	 position: absolute;
-        left: 6px;
+#search::before {
+	font-family: "FontAwesome";
+	content: "f002";
+	position: absolute;
+	left: 6px;
 }
-#search::placeholder{
-	
+#search::placeholder {
 	color: #fff;
-	font-family: 'Lato',sans-serif;
+	font-family: "Lato", sans-serif;
 }
-#search::-webkit-input-placeholder{
-	
+#search::-webkit-input-placeholder {
 	color: #fff;
-	font-family:'FontAwesome','Lato',sans-serif;
+	font-family: "FontAwesome", "Lato", sans-serif;
 }
 #search::-moz-placeholder {
-    font-family:'FontAwesome','Lato',sans-serif;
+	font-family: "FontAwesome", "Lato", sans-serif;
 }
 #search::-ms-input-placeholder {
-    font-family:'FontAwesome','Lato',sans-serif;
+	font-family: "FontAwesome", "Lato", sans-serif;
 }
-
 
 /*Home*/
 
-.home{
-	background-color: #161A1A;
+.home {
+	background-color: #161a1a;
 	padding: 2rem 8rem 4rem 8rem;
 }
-.name-wrapper{
+.name-wrapper {
 	padding-right: 60px;
 }
-.playlist-name{
-	font-family: 'Lato',serif;
+.playlist-name {
+	font-family: "Lato", serif;
 	font-size: 1rem;
 	color: #fff;
-
 }
-.playlist-img{
+.playlist-img {
 	width: 200px;
 	display: block;
 	margin: 0px;
 }
 
-.featured{
+.featured {
 	margin-top: 8rem;
 }
-.playlist-title{
+.playlist-title {
 	color: #fff;
-	font-family: 'Lato',serif;
+	font-family: "Lato", serif;
 	font-style: bold;
 	font-size: 1.5rem;
 	margin-bottom: 1rem;
 }
-.my-genres{
+.my-genres {
 	margin-top: 8rem;
 }
-.category-name{
+.category-title {
 	color: #fff;
-	font-family: 'Lato',serif;
+	font-family: "Lato", "sans-serif";
+}
+.category-name {
+	color: #fff;
+	font-family: "Lato", serif;
 }
 
-
-.category-item{
+.category-item {
 	/* background-color: #fff; */
 	margin: 10px 40px 10px 0px;
-	background-position: center center;
+	background-position: center 34%;
 	border-radius: 6px;
 }
-.category-wrapper{
-background: rgb(155,45,239);
-background: linear-gradient(90deg, rgba(155,45,239,0.5) 49%, rgba(45,155,239,0.5) 100%);
-height: 4.8rem;
-border: 1px solid #fff;
-border-radius: 6px;
+.category-wrapper {
+	background: rgb(155, 45, 239);
+	background: linear-gradient(
+		90deg,
+		rgba(155, 45, 239, 0.5) 49%,
+		rgba(45, 155, 239, 0.5) 100%
+	);
+	height: 5.4rem;
+	border: 1px solid #fff;
+	border-radius: 6px;
 }
-.category-name{
+.category-name {
 	padding-top: 4px;
 	text-align: center;
-	font-family: 'Lato',serif;
+	font-family: "Lato", serif;
+}
+.track-img {
+	width: 200px;
+	display: block;
+	margin: 0px;
+}
+.track-name {
+	font-family: "Lato", serif;
+	font-size: 1rem;
+	color: #fff;
+}
+.my-albums{
+	margin-top: 4rem;
+}
+.my-playlists{
+	margin-top: 4rem;
 }

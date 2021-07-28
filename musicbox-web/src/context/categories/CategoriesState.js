@@ -76,7 +76,9 @@ const CategoriesState = props => {
                 "previous": null,
                 "total": 48
             }
-        }
+        },
+
+        genre:{}
 
     };
 

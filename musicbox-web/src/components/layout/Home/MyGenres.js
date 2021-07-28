@@ -6,7 +6,7 @@ const MyGenres = ({categoriesHome}) => {
 
     return (
         <div className="my-genres">
-            <h1 className="category-title">Genres</h1>
+            <h1 className="category-title">Categories</h1>
             <div className="categories">
                 <Categories categoriesHome={categoriesHome} />
             </div>
