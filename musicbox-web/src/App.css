@@ -10,11 +10,13 @@
 .grid-5 {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	row-gap: 2rem;
 }
-.mg-1{
+.mg-1 {
 	margin-top: 1rem;
 }
-.br-1{
+
+.br-1 {
 	border-radius: 6px;
 }
 .sp {
@@ -23,7 +25,11 @@
 .pointer {
 	cursor: pointer;
 }
-/**/
+.name-2{
+	font-family: "Lato", serif;
+	color: #fff;
+}
+/*Nav*/
 .navbar {
 	background-color: black;
 	padding-top: 20px;
@@ -52,7 +58,11 @@
 .logo {
 	width: 80px;
 }
-.left-list > li {
+.left-list>a{
+	text-decoration: none;
+	color: #fff;
+}
+.left-list >a> li {
 	margin-left: 20px;
 	padding: 10px;
 	list-style: none;
@@ -185,9 +195,27 @@
 	font-size: 1rem;
 	color: #fff;
 }
-.my-albums{
+.my-albums {
 	margin-top: 4rem;
 }
-.my-playlists{
+.my-playlists {
 	margin-top: 4rem;
+}
+
+/*Browse*/
+.browse {
+	background-color: #161a1a;
+	padding: 2rem 8rem 4rem 8rem;
+}
+
+.recent-browse{
+	margin-top: 10px;
+}
+.featured-browse{
+	margin-top: 4rem;
+}
+/*Library*/
+.library{
+		background-color: #161a1a;
+	padding: 2rem 8rem 4rem 8rem;
 }

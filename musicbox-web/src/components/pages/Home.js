@@ -1,4 +1,4 @@
-import React,{Fragment, useContext} from 'react';
+import React,{Fragment, useContext, useEffect, useState} from 'react';
 import Featured from '../layout/Home/Featured';
 
 import NewReleases from '../layout/Home/NewReleases';
@@ -8,8 +8,11 @@ import MyPlaylists from '../layout/Home/MyPlaylists'
 import PlaylistContext from '../../context/playlists/playlistContext';
 import CategoriesContext from '../../context/categories/categoriesContext'
 
-const Home = () => {
+const Home = ({active, setActive, location}) => {
 
+    useEffect(() => {
+    setActive(location.pathname);
+    }, [])
 
     const playlistContext = useContext(PlaylistContext);
     const categoriesContext = useContext(CategoriesContext);
@@ -22,7 +25,7 @@ const Home = () => {
       <div className="home">
                 <NewReleases newReleases={newReleases} />
                 <Featured featured={featured} />
-                <MyGenres categoriesHome={categoriesHome} />
+                <MyGenres categories={categoriesHome} />
                 <MyAlbums myAlbums={myAlbums} />
                 <MyPlaylists myPlaylists={myPlaylists} />
       </div>
