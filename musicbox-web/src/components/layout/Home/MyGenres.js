@@ -2,13 +2,13 @@ import React from 'react';
 import Categories from '../categories/Categories';
 
 
-const MyGenres = ({categoriesHome}) => {
+const MyGenres = ({categories}) => {
 
     return (
         <div className="my-genres">
             <h1 className="category-title">Categories</h1>
             <div className="categories">
-                <Categories categoriesHome={categoriesHome} />
+                <Categories categories={categories} />
             </div>
         </div>
     )
