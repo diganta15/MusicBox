@@ -63,8 +63,8 @@
 	color: #fff;
 }
 .left-list >a> li {
-	margin-left: 20px;
-	padding: 10px;
+	margin: 10px 20px 0px 20px ;
+	padding: 0px 10px 0px 10px;
 	list-style: none;
 	font-family: "Lato", serif;
 }
@@ -74,12 +74,12 @@
 }
 .active-button {
 	width: 44px;
-	padding-top: 2px !important;
+	/* padding-top: 2px !important;
 	padding-bottom: 0px !important;
 
-	padding: 0px;
-	margin-top: 6px;
-	margin-bottom: 6px;
+	padding: 0px; */
+	margin-top: 10px;
+	margin-bottom: 10px;
 
 	color: #000 !important;
 	border-radius: 16px; /*1*/
@@ -218,4 +218,23 @@
 .library{
 		background-color: #161a1a;
 	padding: 2rem 8rem 4rem 8rem;
+}
+.top-artists{
+	padding-top: 4rem;
+}
+.artist{
+	text-align: center;
+
+}
+.artist-name{
+	font-family: 'Lato',serif;
+	color: #fff;
+	font-size: 20px;
+ 
+}
+.artist-image{
+
+	padding: auto;
+	width: 200px;
+	border-radius: 100px;
 }
