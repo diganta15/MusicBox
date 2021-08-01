@@ -10,6 +10,7 @@ import Browse from "./components/pages/Browse";
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 import Navbar from "./components/layout/NavBar";
 import Playlist from "./components/layout/subpages/Playlist";
+import Track from "./components/layout/subpages/Track";
 
 function App() {
 	const [active, setActive] = useState('/')
@@ -34,6 +35,7 @@ function App() {
 									<Login {...props} active={active} setActive={setActive} />
 								)}  />
 								<Route exact path="/playlist/:id" component={Playlist} />
+								<Route exact path="/track/:id" component={Track} />
 							</Switch>
 						</PlaylistState>
 					</SongsState>

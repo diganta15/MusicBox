@@ -1,9 +1,10 @@
 import React,{useContext} from 'react';
-import PlaylistContext from '../../../context/playlists/playlistContext'
+import PlaylistContext from '../../../context/playlists/playlistContext';
+import {Link} from 'react-router-dom'
 
 const Playlist = (props) => {
     const playlistContext = useContext(PlaylistContext);
-    const {name,images} = playlistContext.currentPlaylist;
+    const {name,images,artists} = playlistContext.currentPlaylist;
     const {items} = playlistContext.currentPlaylist.tracks;
   
     const millisToMinutesAndSeconds =(millis)=> {
@@ -17,17 +18,20 @@ const Playlist = (props) => {
         <div className="playlist-details">
             <div className="cover-image">
                 <img src={images[0].url} alt="" className="cover" />
+                <p className="artist-name">{artists.map(artist => artists.indexOf(artist) !== (artists.length - 1) ? `${artist.name}, `: `${artist.name}`)}</p>
             </div>
             <h1 className="album-title">{name}</h1>
 
             <div className="tracks">
                 {items.map(item =>(
-                   <div key={item.id} className="">
-                       <div className="flex playlist-track-details pointer">
-                            <p>{item.name}</p>
-                            <p>{millisToMinutesAndSeconds(item.duration_ms)}</p>
-                       </div>
-                   </div>
+                    <Link key={item.id} to={`/track/${item.id}`}>
+                        <div  className="">
+                            <div className="flex sp playlist-track-details pointer">
+                                <p>{item.name}</p>
+                                <p>{millisToMinutesAndSeconds(item.duration_ms)}</p>
+                            </div>
+                        </div>
+                </Link>
                 ))}
             </div>
         </div>

@@ -18,7 +18,7 @@
 }
 .flex{
 	display: flex;
-	justify-content: space-between;
+	/* justify-content: space-between; */
 }
 .mg-1 {
 	margin-top: 1rem;
@@ -287,4 +287,9 @@ box-shadow: 0px 0px 147px 0px rgba(0,0,0,0.75) inset;
 	margin-top: 1rem;
 	margin-bottom: 1rem;
 	
+}
+.artist-name{
+	color: #E1E5EA;
+	padding: 0.4rem 34rem 0.4rem 34rem;
+	font-size: 1rem;
 }

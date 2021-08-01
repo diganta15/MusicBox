@@ -22304,6 +22304,16 @@ const PlaylistState = (props) => {
 					"name": "Anson Seabra",
 					"type": "artist",
 					"uri": "spotify:artist:2jHp7gQArCQrlMvdrIVFCg"
+				}, 
+				{
+					"external_urls": {
+						"spotify": "https://open.spotify.com/artist/5IH6FPUwQTxPSXurCrcIov"
+					},
+					"href": "https://api.spotify.com/v1/artists/5IH6FPUwQTxPSXurCrcIov",
+					"id": "5IH6FPUwQTxPSXurCrcIov",
+					"name": "Alec Benjamin",
+					"type": "artist",
+					"uri": "spotify:artist:5IH6FPUwQTxPSXurCrcIov"
 				}
 			],
 			"available_markets": [
