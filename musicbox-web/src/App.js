@@ -7,9 +7,11 @@ import PlaylistState from "./context/playlists/PlaylistState";
 import SongsState from "./context/songs/SongsState";
 import CategoriesState from "./context/categories/CategoriesState";
 import Browse from "./components/pages/Browse";
+
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 import Navbar from "./components/layout/NavBar";
 import Playlist from "./components/layout/subpages/Playlist";
+import Categories from "./components/layout/subpages/Categories";
 import Track from "./components/layout/subpages/Track";
 
 function App() {
@@ -35,6 +37,7 @@ function App() {
 									<Login {...props} active={active} setActive={setActive} />
 								)}  />
 								<Route exact path="/playlist/:id" component={Playlist} />
+								<Route exact path="/categories/:id" component={Categories} />
 								<Route exact path="/track/:id" component={Track} />
 							</Switch>
 						</PlaylistState>

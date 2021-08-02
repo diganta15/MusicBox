@@ -1,6 +1,13 @@
-import React from 'react';
+import React,{useContext} from 'react';
+import SongsContext from '../../../context/songs/songsContext';
 
 const Track = (props) => {
+    const songsContext = useContext(SongsContext);
+
+    const {current} = songsContext;
+    console.log(current);
+
+
     console.log(props.match.params.id);
     return (
         <div>

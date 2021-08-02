@@ -24,14 +24,14 @@ const Playlist = (props) => {
 
             <div className="tracks">
                 {items.map(item =>(
-                    <Link key={item.id} to={`/track/${item.id}`}>
-                        <div  className="">
+                  
+                        <div key={item.id} className="">
                             <div className="flex sp playlist-track-details pointer">
                                 <p>{item.name}</p>
                                 <p>{millisToMinutesAndSeconds(item.duration_ms)}</p>
                             </div>
                         </div>
-                </Link>
+              
                 ))}
             </div>
         </div>
